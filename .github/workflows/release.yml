@@ -6,6 +6,11 @@ on:
       - main
     paths:
       - 'charts/**'
+  
+  workflow_dispatch:
+    inputs:
+      manual:
+        description: 'Manual trigger'
 
 jobs:
   release:
