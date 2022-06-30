@@ -1,3 +1,22 @@
 apiVersion: v1
-entries: {}
+entries:
+  typesense:
+  - apiVersion: v2
+    appVersion: 0.23.0
+    created: "2022-06-30T11:15:02.20180256Z"
+    description: Typesense is an open source, typo tolerant search engine that delivers fast and relevant results out-of-the-box.
+    digest: 5188802373b511a07f920723b24dd8bfdf2055822086f13cf0b6e083b2d53cae
+    home: https://typesense.org/
+    icon: https://raw.githubusercontent.com/typesense/typesense/main/assets/typesense_logo.svg
+    keywords:
+    - search
+    maintainers:
+    - email: hmphu.it@gmail.com
+      name: hmphu
+    name: typesense
+    sources:
+    - https://github.com/typesense/typesense
+    urls:
+    - https://github.com/hmphu/helm-charts/releases/download/typesense-0.1.6/typesense-0.1.6.tgz
+    version: 0.1.6
 generated: "0001-01-01T00:00:00Z"
