@@ -1,5 +1,42 @@
 apiVersion: v1
 entries:
+  kutt:
+  - apiVersion: v2
+    appVersion: 2.7.4
+    created: "2023-02-09T08:26:54.341149185Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.truecharts.org
+      version: 11.1.2
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.truecharts.org/
+      version: 11.0.22
+    - condition: redis.enabled
+      name: redis
+      repository: https://charts.truecharts.org
+      version: 5.0.29
+    description: Kutt is a modern URL shortener with support for custom domains. Shorten URLs, manage your links and view the click rate statistics.
+    digest: d3a24b8779525f9a7f768fb54b7f52f42a9c7440947ab77e917a6e55fc2f4ce4
+    home: https://truecharts.org/charts/stable/kutt
+    icon: https://truecharts.org/img/hotlink-ok/chart-icons/kutt.png
+    keywords:
+    - kutt
+    - link
+    - short
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: hmphu.it@gmail.com
+      name: hmphu
+    name: kutt
+    sources:
+    - https://github.com/truecharts/charts/tree/master/charts/stable/kutt
+    - https://hub.docker.com/kutt/kutt
+    - https://github.com/thedevs-network/kutt
+    type: application
+    urls:
+    - https://github.com/hmphu/helm-charts/releases/download/kutt-6.0.21/kutt-6.0.21.tgz
+    version: 6.0.21
   typesense:
   - apiVersion: v2
     appVersion: 0.23.0
