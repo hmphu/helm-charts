@@ -3,6 +3,16 @@ entries:
   imageproxy:
   - apiVersion: v2
     appVersion: 1.16.0
+    created: "2023-02-16T14:30:38.916566109Z"
+    description: A Helm chart for willnorris/imageproxy
+    digest: a74b7f945690ba9fbc2d6bef5a7582a5e99dcf06fa0021f4ecb060038b4b8f65
+    name: imageproxy
+    type: application
+    urls:
+    - https://github.com/hmphu/helm-charts/releases/download/imageproxy-0.1.1/imageproxy-0.1.1.tgz
+    version: 0.1.1
+  - apiVersion: v2
+    appVersion: 1.16.0
     created: "2023-02-16T14:24:26.381636846Z"
     description: A Helm chart for Kubernetes
     digest: 3ebbc19b8997722cf89686d4bf4d08e8137c2104161c080eddc421496b50b960
