@@ -40,7 +40,7 @@ service:
   port: 8080
   env:
     - name: IMAGEPROXY_CACHE
-      value: "/tmp/imageproxy"
+      value: "/cache"
 
 ingress:
   enabled: false
@@ -76,6 +76,16 @@ autoscaling:
   maxReplicas: 100
   targetCPUUtilizationPercentage: 80
   # targetMemoryUtilizationPercentage: 80
+
+persistence:
+  enabled: true
+  path: /cache
+  ## If defined, volume.beta.kubernetes.io/storage-class: <storageClass>
+  ## Default: volume.alpha.kubernetes.io/storage-class: default
+  ##
+  # storageClass:
+  accessMode: ReadWriteOnce
+  size: 1Gi
 
 nodeSelector: {}
 
